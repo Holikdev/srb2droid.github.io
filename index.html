@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SRB2Droid by hOLIKPORTS</title>
+  <style>
+    :root {
+      --bg-dark: #0b132b;
+      --card-bg: #1c2541;
+      --sonic-blue: #1e90ff;
+      --sonic-blue-hover: #0066cc;
+      --ring-gold: #ffd700;
+      --text-main: #ffffff;
+      --text-muted: #b0c4de;
+      --border-color: #3a506b;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(135deg, #003399 0%, #1e90ff 100%);
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom: 4px solid var(--ring-gold);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: var(--ring-gold);
+      color: #000;
+      font-weight: bold;
+      padding: 0.3rem 0.85rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+
+    .container {
+      max-width: 650px;
+      margin: auto;
+      padding: 2rem 1.5rem;
+      width: 100%;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .notice {
+      background-color: rgba(255, 215, 0, 0.12);
+      border: 1px solid var(--ring-gold);
+      color: var(--ring-gold);
+      padding: 0.75rem;
+      border-radius: 6px;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+
+    .file-info {
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .btn {
+      display: block;
+      padding: 0.9rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: background-color 0.2s, transform 0.1s;
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    .btn-primary {
+      background-color: var(--sonic-blue);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--sonic-blue-hover);
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: var(--ring-gold);
+      border: 2px solid var(--ring-gold);
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--ring-gold);
+      color: #000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.25rem;
+      background-color: #070d1f;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--border-color);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SRB2Droid</h1>
+    <div class="badge">by hOLIKPORTS • SRB2MB</div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <div class="notice">⚠️ This project is for Android only.</div>
+      <p class="file-info"><strong>File:</strong> SRB2_R9A.apk (179 MB)</p>
+      <div class="btn-group">
+        <a href="https://www.mediafire.com/file/i380dt9l4p11jyu/SRB2_R9A.apk/file" target="_blank" rel="noopener" class="btn btn-primary">Download APK (MediaFire)</a>
+        <a href="https://srb2.org" target="_blank" rel="noopener" class="btn btn-secondary">SRB2MB</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>SRB2Droid by <strong>hOLIKPORTS</strong></p>
+  </footer>
+
+</body>
+</html>
